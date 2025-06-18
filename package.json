@@ -27,7 +27,9 @@
         "eject": "react-scripts eject",
         "server": "node server/index.js",
         "client": "react-scripts start",
-        "dev": "concurrently \"npm run server\" \"npm run client\""
+        "dev": "concurrently \"npm run server\" \"npm run client\"",
+        "predeploy": "npm run build",
+        "deploy": "netlify deploy --prod"
     },
     "eslintConfig": {
         "extends": [
